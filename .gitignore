@@ -1,2 +1,2 @@
-config.json
-out_dir/*
+/__pycache__
+/out_*
