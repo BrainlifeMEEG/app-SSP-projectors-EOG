@@ -34,7 +34,7 @@ eog_projs, eog_events = mne.preprocessing.compute_proj_eog(raw, raw_event=None, 
             n_jobs=-1, ch_name=config['ch_name'], reject=None, flat=None, bads=[],
             avg_ref=config['avg_ref'], no_proj=config['no_proj'], event_id=config['event_id'], eog_l_freq=config['eog_l_freq'], eog_h_freq=config['eog_h_freq'],
             tstart=config['tstart'],
-            qrs_threshold=config['qrs_threshold'], filter_method=config['filter_method'], iir_params=config['iir_params'], copy=True, return_drop_log=False,
+            filter_method=config['filter_method'], iir_params=config['iir_params'], copy=True, return_drop_log=False,
             meg=config['meg'])
 
 mne.write_proj('out_dir/proj.fif', eog_projs, overwrite=True)
