@@ -81,7 +81,7 @@ for i, fig in enumerate(f):
 report = mne.Report(title='SSP EOG Projectors')
 report.add_projs(info=raw.info, projs=eog_projs, title='SSP EOG Projectors')
 
-report.save(os.path.join('out_report', 'report.html'), overwrite=True)
+report.save(os.path.join('out_report', 'report.html'), overwrite=True, verbose=False)
 
 # == CREATE PRODUCT.JSON ==
 product_items = []
